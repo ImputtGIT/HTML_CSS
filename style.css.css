@@ -1,1 +1,134 @@
- 
+/* 1. Estilo básico */
+body {
+  background-color: #d3d3d3;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: blue;
+}
+
+/* 2. Lista Estilizada */
+ul {
+  color: green;
+  font-weight: bold;
+  line-height: 2em;
+}
+
+/* 3. Link estilizado */
+a {
+  text-decoration: none;
+  color: purple;
+}
+
+a:hover {
+  color: red;
+}
+
+/* 4. Imagem com borda */
+img {
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+/* 5. Caixa com texto centralizado */
+.caixa {
+  background-color: #add8e6;
+  text-align: center;
+  margin: 20px auto;
+  width: 50%;
+  padding: 20px;
+}
+
+/* 6. Tabela estilizada */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th {
+  background-color: #ccc;
+}
+
+/* 7. Formulário */
+input {
+  width: 250px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: green;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* 8. Seções com cores diferentes */
+section {
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.secao1 {
+  background-color: #f8d7da;
+}
+
+.secao2 {
+  background-color: #d4edda;
+}
+
+.secao3 {
+  background-color: #d1ecf1;
+}
+
+/* 9. Galeria com Flexbox */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.galeria img {
+  width: calc(33.33% - 20px);
+}
+
+@media (max-width: 768px) {
+  .galeria img {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria img {
+    width: 100%;
+  }
+}
+
+/* 10. Animação e Transição */
+.animado {
+  transition: color 0.5s;
+}
+
+.animado:hover {
+  color: orange;
+}
+
+.botao-animado {
+  transition: all 0.3s;
+}
+
+.botao-animado:hover {
+  transform: scale(1.1) rotate(5deg);
+  background-color: #444;
+  color: #fff;
+}
