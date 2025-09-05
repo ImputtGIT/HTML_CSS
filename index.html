@@ -4,102 +4,108 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atividade HTML e CSS</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <!-- 1. Título e Parágrafos -->
-  <h1>Bem-vindo à Página de Atividades</h1>
-  <p>Este é o primeiro parágrafo da página.</p>
-  <p>Este é o segundo parágrafo da página.</p>
+  <h1>Bem-vindo à Minha Página</h1>
+  <p>Esta página foi criada para praticar HTML e CSS com diversos elementos.</p>
+  <p>Explore os conteúdos abaixo para ver estilos, links, imagens, formulários e mais!</p>
 
   <!-- 2. Lista Estilizada -->
   <ul>
-    <li>Ler</li>
-    <li>Desenhar</li>
-    <li>Jogar</li>
-    <li>Cozinhar</li>
+    <li>Assistir filmes</li>
+    <li>Programar</li>
+    <li>Viajar</li>
     <li>Fotografar</li>
   </ul>
 
   <!-- 3. Link Estilizado -->
-  <a href="https://www.exemplo.com" target="_blank">Visite meu site favorito</a>
+  <p>
+    Acesse um dos sites mais usados no Brasil: 
+    <a href="https://www.youtube.com" target="_blank">YouTube</a>
+  </p>
 
-  <!-- 4. Imagem com Borda -->
-  <img src="https://via.placeholder.com/300" alt="Imagem Exemplo">
+  <!-- 4. Imagem com borda (link direto da internet) -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/YouTube_social_white_squircle_(2017).svg"
+       alt="Logo do YouTube">
 
   <!-- 5. Caixa com texto centralizado -->
   <div class="caixa">
-    <h2>Caixa Centralizada</h2>
-    <p>Texto dentro da caixa centralizada na tela.</p>
+    <h2>Texto Centralizado</h2>
+    <p>Esta é uma caixa com estilo centralizado e cor de fundo personalizada.</p>
   </div>
 
-  <!-- 6. Tabela Estilizada -->
+  <!-- 6. Tabela estilizada -->
   <table>
     <thead>
       <tr>
         <th>Nome</th>
         <th>Idade</th>
-        <th>Profissão</th>
+        <th>Cidade</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>João</td>
-        <td>25</td>
-        <td>Designer</td>
+        <td>Ana</td>
+        <td>22</td>
+        <td>São Paulo</td>
       </tr>
       <tr>
-        <td>Maria</td>
-        <td>30</td>
-        <td>Programadora</td>
-      </tr>
-      <tr>
-        <td>Carlos</td>
+        <td>Bruno</td>
         <td>28</td>
-        <td>Professor</td>
+        <td>Rio de Janeiro</td>
+      </tr>
+      <tr>
+        <td>Carla</td>
+        <td>25</td>
+        <td>Belo Horizonte</td>
       </tr>
     </tbody>
   </table>
 
-  <!-- 7. Formulário Simples -->
+  <!-- 7. Formulário simples -->
   <form>
-    <label>Nome:</label><br>
-    <input type="text" name="nome"><br><br>
-    <label>Email:</label><br>
-    <input type="email" name="email"><br><br>
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
     <button type="submit">Enviar</button>
   </form>
 
   <!-- 8. Seções com cores diferentes -->
   <section class="secao1">
     <h2>Seção 1</h2>
-    <p>Conteúdo da primeira seção.</p>
+    <p>Conteúdo da primeira seção com cor de fundo única.</p>
   </section>
 
   <section class="secao2">
     <h2>Seção 2</h2>
-    <p>Conteúdo da segunda seção.</p>
+    <p>Conteúdo da segunda seção com outra cor de fundo.</p>
   </section>
 
   <section class="secao3">
     <h2>Seção 3</h2>
-    <p>Conteúdo da terceira seção.</p>
+    <p>Conteúdo da terceira seção com estilo visual diferente.</p>
   </section>
 
-  <!-- 9. Galeria com Flexbox -->
-  <div class="galeria">
-    <img src="https://via.placeholder.com/200" alt="img1">
-    <img src="https://via.placeholder.com/200" alt="img2">
-    <img src="https://via.placeholder.com/200" alt="img3">
-    <img src="https://via.placeholder.com/200" alt="img4">
-    <img src="https://via.placeholder.com/200" alt="img5">
-    <img src="https://via.placeholder.com/200" alt="img6">
-  </div>
+  <!-- 9. Galeria com imagens de wallpapers (links que funcionam) -->
+<div class="galeria">
+  <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=600&q=80" alt="Wallpaper 1">
+  <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=600&q=80" alt="Wallpaper 2">
+  <img src="https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?auto=format&fit=crop&w=600&q=80" alt="Wallpaper 3">
+  <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=600&q=80" alt="Wallpaper 4">
 
-  <!-- 10. Animação e Transição -->
-  <h1 class="animado">Passe o mouse aqui!</h1>
-  <button class="botao-animado">Clique aqui</button>
+  <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=600&q=80" alt="Wallpaper 6">
+</div>
+
+
+  <!-- 10. Página com Animação e Transição -->
+  <h1 class="animado">Passe o mouse neste título</h1>
+  <button class="botao-animado">Clique Aqui</button>
 
 </body>
 </html>
